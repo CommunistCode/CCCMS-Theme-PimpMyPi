@@ -216,6 +216,11 @@ img.imageCentre {
 /* Extended Base Classes                 */
 /*****************************************/
 
+/* Generic clear class, useful here and there */
+.clear {
+  clear: both;
+}
+
 /* .help: used for help dialogues */
 
 .help {
@@ -271,8 +276,13 @@ img.imageCentre {
   width: 190px;
 }
 
-#smallLogin .registerText a, p {
+#smallLogin a , #smallLogin p {
   font-size: 10px;
+}
+
+#smallLogin .info {
+  line-height: 65px;
+  text-align: center;
 }
 
 /* body.faux: used for pages with sidebars */
@@ -283,10 +293,11 @@ img.imageCentre {
 
 /* sideBar: used to style the sidebars */
 
+/* No right margin to give text more room to breathe */
 .sidebar {
   float: left;
-  width: 110px;
-  margin: 0px;
+  width: 140px;
+  margin: 20px 0px 0px 10px;
 }
 
 .sidebar ul {
@@ -300,15 +311,29 @@ img.imageCentre {
   list-style: none;
   margin: 0px 0px 5px 0px;
   border: none;
+  font-size: 12px;
 }
 
+.sidebar a, .sidebar p {
+  font-size: 12px;
+}
+
+/* Width set at 10px less to stop underline overstretching */
 .sideBar .linkHeader {
+  width: 130px;
   font-weight: bold;
   border-bottom: 1px solid green;
-  margin: 20px 0px 5px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 10px 0px;
+  padding: 0px;
 }
 
 .sidebar .linkHeaderTop {
-  margin: 14px 0px 5px 0px;
+  margin: 14px 0px 10px 0px;
+}
+
+.sideBody {
+  float: right;
+  width: 720px;
+  margin: 20px 20px 20px 10px;
+  padding: 0px;
 }
