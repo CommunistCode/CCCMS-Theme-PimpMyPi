@@ -1,0 +1,314 @@
+/*****************************************/
+/* Standard Base Classes                 */
+/*****************************************/
+
+html,body {
+  font-family: sans-serif;
+  font-weight: 400;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background : #EDEDED;
+}
+
+body {
+  min-height: 100%;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	text-align: justify;
+	line-height:150%;
+	color: #4A4A4A;
+}
+
+input, textarea {
+	border: solid 1px black;
+	padding: 4px;
+	font-size: 11px;
+}
+
+a {	
+  color: black;
+  text-decoration: underline;	
+  font-size: 13px;
+}
+
+h1 {
+	font-size: 25px;
+	border-bottom: solid 2px #FF8A97;
+	padding: 0px 0px 3px 0px;
+  margin: 10px 0px 10px 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+
+.brownSpacer {
+  position: relative;
+  width: 910px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  background: #cad180;
+  margin: 0px auto 0px auto;
+  height:10px;
+  line-height: 5px;
+  font-size: 5px;
+}
+
+#mainContainer {
+	position: relative;
+  padding: 30px 0px 30px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#title {
+	position: relative;
+  border-top: solid 1px grey;
+  border-left: solid 1px grey;
+  border-right: solid 1px grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 910px;
+	height: 105px;
+  margin: 0px auto 0px auto;
+  background: white;
+}
+
+#titleImage {
+	float: left;
+  margin: 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#titleImage img {
+  border: 0px;
+  padding: 5px 0px 0px 5px;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+  width: 150px;
+}
+
+#navBar {
+  width: 910px;
+  margin: 0px auto 0px auto;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	background: #d61933;
+	padding: 2px 0px 0px 0px;
+	height: 28px;
+	font-size: 12px;
+}
+
+#navBar a {
+  color: white;
+  font-size: 12px;
+  text-decoration: underline;	
+}
+
+.navBarLink {
+	float: left;
+	padding: 7px 0px 0px 30px;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+.navBarLinkSelected {
+	float: left;
+	padding: 7px 0px 0px 30px;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+#body {
+  position: relative;
+  width: 910px;
+  margin: 0px auto 0px auto;
+ 	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	color: #4A4A4A;
+  background: white;
+	clear: both;
+	font-size: 14px;
+	overflow: auto;
+	line-height: 150%;
+	text-align: justify;
+	font-size: 13px;
+}
+
+.baseBody {
+	padding: 10px 20px 40px 20px;
+}
+
+#footer {
+  width: 910px;
+  height: 30px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0px auto 0px auto;
+	background: #d61933;
+	color: white;
+}
+
+#footer a {
+	margin: 0px 10px 0px 0px;
+  float: right;
+	font-weight: bold;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+
+#matchTags {
+  margin: 20px;
+}
+
+#matchTags h2 {
+  padding: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+img {
+	border: 1px solid black;
+}
+
+img.imageLeft {
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	display:block;
+}
+
+img.imageRight {
+	float:right;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	display:block;
+}
+
+img.imageCentre {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display:block;
+}
+
+/*****************************************/
+/* Extended Base Classes                 */
+/*****************************************/
+
+/* .help: used for help dialogues */
+
+.help {
+	margin: 0px 20px 20px 20px;
+	background: #EDEDED;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+/* smallLogin: used to style the small vesion of */
+/*             the login box                     */
+
+#smallLogin {
+	width: 190px;
+	height: 65px;
+  margin: 10px;
+	float:right;
+  border-radius: 10px;
+  background: #ecdc9b;
+	border: 1px solid grey;
+  padding: 10px;
+}
+
+#smallLogin input.text, label {
+  margin: 0px 0px 5px 0px;
+}
+
+#smallLogin input.text {
+  float: right;
+  font-size: 12px;
+  width: 80px;
+  height: 22px;
+  padding: 0px 0px 0px 4px;
+}
+
+#smallLogin label {
+	float: left;
+  width: 50px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+#smallLogin input.button {
+  float: right;
+  height: 49px;
+  padding: 0px;
+  width: 30px;
+}
+
+#smallLogin .registerText {
+  float: left;
+  width: 190px;
+}
+
+#smallLogin .registerText a, p {
+  font-size: 10px;
+}
+
+/* body.faux: used for pages with sidebars */
+
+#body.faux {
+  background: url('../images/fauxBody.png') repeat-y;
+}
+
+/* sideBar: used to style the sidebars */
+
+.sidebar {
+  float: left;
+  width: 110px;
+  margin: 0px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0px;
+  padding 0px;
+  border: none;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 0px 0px 5px 0px;
+  border: none;
+}
+
+.sideBar .linkHeader {
+  font-weight: bold;
+  border-bottom: 1px solid green;
+  margin: 20px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.sidebar .linkHeaderTop {
+  margin: 14px 0px 5px 0px;
+}

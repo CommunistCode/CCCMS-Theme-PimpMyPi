@@ -1,0 +1,12 @@
+#smallLogin {
+  width: 210px;
+}
+
+#smallLogin .button {
+  margin: 0px 0px 0px 10px;
+  border: 1px solid black;
+}
+
+#titleImage {
+  padding: 8px 0px 0px 8px;
+}
