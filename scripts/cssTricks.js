@@ -13,7 +13,7 @@ function setCSSHeight() {
   var cssCalculatedHeight = 105 + 60 + 30 +60 ;
 
   // Get rid of the scrollbar
-  cssCalculatedHeight++;
+  cssCalculatedHeight += 2;
 
   if (navigator.appName == 'Microsoft Internet Explorer') {
 
@@ -25,7 +25,7 @@ function setCSSHeight() {
 
   var bodyDiv = document.getElementById('body');
 
-  if (bodyDiv.offsetHeight < (recalculatedHeight+60)) {
+  if (bodyDiv.offsetHeight < (recalculatedHeight)) {
     
     bodyDiv.style.height = recalculatedHeight;
 

@@ -1,4 +1,4 @@
-<div id='titleImage'><img src='<?php echo($directoryPath); ?>/themes/berry/images/title.png'></div>
+<div id='titleImage'><a href='/index.php'><img src='<?php echo($directoryPath); ?>/themes/berry/images/title.png'></a></div>
 
 <div id='smallLogin'>
 	<?php 
