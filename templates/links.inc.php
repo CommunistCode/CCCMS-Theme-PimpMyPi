@@ -1,18 +1,12 @@
 <?php
 
-	$result = $pageTools->getPageLinks();
+	$result = $_pageTools->getPageLinks();
 	
 	foreach($result as $row) {
 	
 		if (!$row['linkOrder'] == 0) {
 		
-			if (!isset($page)) {
-
-				$page = $_GET['page'];
-
-			}
-
-			if ($page == $row['dContentID']) {
+			if (PAGE_ID == $row['dContentID']) {
 				echo("<div class='navBarLinkSelected'>");
 			} 
 			else {
@@ -21,13 +15,13 @@
 			
 			if ($row['directLink'] == "") {
 
-				echo("<a href='".$directoryPath."/index.php?page=".$row['dContentID']."'>".$row['linkName']."</a>\n");
+				echo("<a href='".DIRECTORY_PATH."/index.php?page=".$row['dContentID']."'>".$row['linkName']."</a>\n");
 		
 			}
 
 			else {
 
-				echo("<a href='".$directoryPath."/".$row['directLink']."?page=".$row['dContentID']."'>".$row['linkName']."</a>\n");
+				echo("<a href='".DIRECTORY_PATH."/".$row['directLink']."?page=".$row['dContentID']."'>".$row['linkName']."</a>\n");
 
 			}
 

@@ -3,20 +3,17 @@
 	<head>
 
     <!-- Stylesheets -->
-		<link href="themes/<?php echo($pageTools->getTheme("base")); ?>/stylesheets/cssReset.css" rel="stylesheet" />
-		<link href="themes/<?php echo($pageTools->getTheme("base")); ?>/stylesheets/base.css" rel="stylesheet" />
+		<link href="base/themes/<?php echo($_pageTools->getTheme("base")); ?>/stylesheets/cssReset.css" rel="stylesheet" />
+		<link href="base/themes/<?php echo($_pageTools->getTheme("base")); ?>/stylesheets/base.css" rel="stylesheet" />
 	
     <!-- Javascript CSS Hacks -->
-    <script src="themes/berry/scripts/cssTricks.js"></script>  
+    <script src="base/themes/berry/scripts/cssTricks.js"></script>  
 
     <!--[if IE]>
       <link href="themes/berry/stylesheets/ie.css" rel="stylesheet" />
     <![endif]-->
 
-    <!-- Favicon -->
-    <link rel="SHORTCUT ICON" href="themes/berry/favicon.ico" />
-
-		<title><?php echo($title." : ".$pageContent['title']); ?></title>
+		<title><?php echo(SITE_NAME." : ".$_title); ?></title>
 
 	</head>
 
@@ -27,7 +24,7 @@
     	<div id="title">
 	
   	 		<?php 
-		  		require_once($fullPath."/themes/".$pageTools->getTheme("base")."/templates/title.inc.php"); 
+		  		require_once(FULL_PATH."/base/themes/".$_pageTools->getTheme("base")."/templates/title.inc.php"); 
 			  ?>
 	
     	</div>
@@ -37,7 +34,7 @@
     	<div id='navBar'>
 	
   		<?php 
-				require_once($fullPath."/themes/".$pageTools->getTheme("base")."/templates/links.inc.php"); 
+				require_once(FULL_PATH."/base/themes/".$_pageTools->getTheme("base")."/templates/links.inc.php"); 
 			?>
 	
   	 	</div>
@@ -47,7 +44,7 @@
       <div id="body" class="padded">
 	
 			  <?php		
-				  echo($content);
+				  echo($_content);
 			  ?>
 
       </div>
@@ -57,7 +54,7 @@
       <div id="footer">
 	
  		    <?php 
-				  require_once($fullPath."/themes/".$pageTools->getTheme("base")."/templates/footer.inc.php"); 
+				  require_once(FULL_PATH."/base/themes/".$_pageTools->getTheme("base")."/templates/footer.inc.php"); 
 			  ?>
 
 	  </div>
