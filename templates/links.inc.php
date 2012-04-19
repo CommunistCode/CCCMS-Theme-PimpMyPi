@@ -5,8 +5,8 @@
 	foreach($result as $row) {
 	
 		if (!$row['linkOrder'] == 0) {
-		
-			if (PAGE_ID == $row['dContentID']) {
+			
+      if (defined('PAGE_ID') && PAGE_ID == $row['dContentID']) {
 				echo("<div class='navBarLinkSelected'>");
 			} 
 			else {
